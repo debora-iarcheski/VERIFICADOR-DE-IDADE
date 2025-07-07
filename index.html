@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de Idade - project</title>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano Nascimeto:
+                <input type="number" name="texto-ano" id="texto-ano">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="genero" id="mas" checked> <!--checked para ja aparecer marcado-->
+                <label for="mas">masculino</label>
+                <input type="radio" name="genero" id="fem"> <!--mesmo name para os botoes-->
+                <label for="fem">feminino</label>             
+            </p>
+            <input type="button" value="verificar" onclick="verificar()">
+            
+        </div>
+        <div id="resultado">
+            preencha os dados acima e veja o resultado
+        </div>
+
+        <img id="img-person" src="./assets/menina.png" alt="foto-de-pessoas">
+    </section>
+    <footer>
+        <p>&copy; Débora Iarcheski</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
